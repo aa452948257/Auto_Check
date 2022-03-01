@@ -10,8 +10,8 @@ REPORT_API = 'https://app.bupt.edu.cn/ncov/wap/default/save'
 
 # 当今日没有填报时，在https://app.bupt.edu.cn/ncov/wap/default/index下进行填报，
 # 全部填完，不要提交，f12打开控制台，在Console页面下输入代码 console.log(vm.info) 就会得到以下信息，之后每天就默认填以下信息
-INFO = r"""{
-    "ismoved": 1,
+{
+    "ismoved": 0,
     "jhfjrq": "",
     "jhfjjtgj": "",
     "jhfjhbcc": "",
@@ -24,11 +24,11 @@ INFO = r"""{
     "csmjry": "0",
     "ymjzxgqk": "已接种",
     "xwxgymjzqk": 3,
-    "address": "河北省石家庄市元氏县城区街道锦绣乾城(元氏县气象局西)",
-    "area": "河北省 石家庄市 元氏县",
-    "bztcyy": 4,
-    "city": "石家庄市",
-    "geo_api_info": "{\"type\":\"complete\",\"position\":{\"Q\":37.770451388889,\"R\":114.52477403428901,\"lng\":114.524774,\"lat\":37.770451},\"location_type\":\"html5\",\"message\":\"Get ipLocation failed.Get geolocation success.Convert Success.Get address success.\",\"accuracy\":20.134,\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"0311\",\"adcode\":\"130132\",\"businessAreas\":[],\"neighborhoodType\":\"商务住宅;住宅区;住宅小区\",\"neighborhood\":\"锦绣乾城(元氏县气象局西)\",\"building\":\"\",\"buildingType\":\"\",\"street\":\"向阳街\",\"streetNumber\":\"217号\",\"country\":\"中国\",\"province\":\"河北省\",\"city\":\"石家庄市\",\"district\":\"元氏县\",\"towncode\":\"130132001000\",\"township\":\"城区街道\"},\"formattedAddress\":\"河北省石家庄市元氏县城区街道锦绣乾城(元氏县气象局西)\",\"roads\":[],\"crosses\":[],\"pois\":[],\"info\":\"SUCCESS\"}",
+    "address": "北京市海淀区北太平庄街道西土城路辅路北京邮电大学海淀校区",
+    "area": "北京市  海淀区",
+    "bztcyy": "",
+    "city": "北京市",
+    "geo_api_info": "{\"type\":\"complete\",\"position\":{\"Q\":39.9592054579,\"R\":116.35530354817797,\"lng\":116.355304,\"lat\":39.959205},\"location_type\":\"html5\",\"message\":\"Get ipLocation failed.Get geolocation success.Convert Success.Get address success.\",\"accuracy\":128,\"isConverted\":true,\"status\":1,\"addressComponent\":{\"citycode\":\"010\",\"adcode\":\"110108\",\"businessAreas\":[{\"name\":\"北下关\",\"id\":\"110108\",\"location\":{\"Q\":39.955976,\"R\":116.33873,\"lng\":116.33873,\"lat\":39.955976}},{\"name\":\"西直门\",\"id\":\"110102\",\"location\":{\"Q\":39.942856,\"R\":116.34666099999998,\"lng\":116.346661,\"lat\":39.942856}},{\"name\":\"小西天\",\"id\":\"110108\",\"location\":{\"Q\":39.957147,\"R\":116.364058,\"lng\":116.364058,\"lat\":39.957147}}],\"neighborhoodType\":\"\",\"neighborhood\":\"\",\"building\":\"\",\"buildingType\":\"\",\"street\":\"学院南路\",\"streetNumber\":\"44号\",\"country\":\"中国\",\"province\":\"北京市\",\"city\":\"\",\"district\":\"海淀区\",\"towncode\":\"110108008000\",\"township\":\"北太平庄街道\"},\"formattedAddress\":\"北京市海淀区北太平庄街道西土城路辅路北京邮电大学海淀校区\",\"roads\":[],\"crosses\":[],\"pois\":[],\"info\":\"SUCCESS\"}",
     "glksrq": "",
     "gllx": "",
     "gtjzzfjsj": "",
@@ -37,7 +37,7 @@ INFO = r"""{
     "jchbryfs": "",
     "jcjgqr": "0",
     "jcwhryfs": "",
-    "province": "河北省",
+    "province": "北京市",
     "qksm": "",
     "remark": "",
     "sfcxtz": "0",
@@ -48,29 +48,16 @@ INFO = r"""{
     "sfjcwhry": "0",
     "sfjzdezxgym": 1,
     "sfjzxgym": 1,
-    "sfsfbh": 1,
+    "sfsfbh": 0,
     "sftjhb": "0",
     "sftjwh": "0",
     "sfygtjzzfj": 0,
     "sfyyjc": "0",
-    "sfzx": 0,
+    "sfzx": 1,
     "szsqsfybl": 0,
     "tw": "2",
-    "xjzd": "河北省元氏县锦绣乾城小区14号楼",
-    "created_uid": 0,
-    "date": "20220122",
-    "uid": "47032",
-    "created": 1642806869,
-    "id": 17073160,
-    "gwszdd": "",
-    "sfyqjzgc": "",
-    "jcqzrq": "",
-    "sfjcqz": "",
-    "jrsfqzys": "",
-    "jrsfqzfy": "",
-    "sfsqhzjkk": "",
-    "sqhzjkkys": ""
-}"""
+    "xjzd": "北京邮电大学学三1215",
+ 
 
 REASONABLE_LENGTH = 24
 TIMEOUT_SECOND = 25
